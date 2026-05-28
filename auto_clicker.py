@@ -86,7 +86,9 @@ def main():
     def on_press(key):
         try:
             if key == keyboard.Key.f10:
-                clicker.toggle()
+                clicker.start()
+            elif key == keyboard.Key.f11:
+                clicker.pause()
             elif key == keyboard.Key.f12:
                 return clicker.stop()
         except Exception as e:
